@@ -7,21 +7,19 @@ class Sidebar extends React.Component {
         return (
             <aside class="border js-fullheight" id="sidebar">
                 <div className="text-center">
-                    <div className="author-img">{this.props.photo}</div>
+                    <div className="author-img" style={{backgroundImage: `url(${this.props.photo})`}}></div>
                     <h1 id="colorlib-logo">{this.props.name}</h1>
                     <span className="position">{this.props.title}</span>
                 </div>
                 <nav id="colorlib-main-menu" className="navbar">
                     <div id="navbar" className="collapse in" aria-expanded="true">
                         <ul>
-                            <li className="active"><a href="#">Home</a></li>
+                            <li className="active"><a href="#">Introduction</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Education</a></li>
                             <li><a href="#">Experience</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Skills</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>

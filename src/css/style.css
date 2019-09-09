@@ -625,11 +625,16 @@ figure figcaption {
 
 #sidebar #colorlib-main-menu {
     display: block;
-    width: 100%
+    width: 100%;
+    height: 100%;
+}
+
+#navbar {
+    margin-top: 50%;
 }
 
 #sidebar #colorlib-main-menu .collapse {
-    display: block !important
+    display: block !important;
 }
 
 #sidebar #colorlib-main-menu ul {
