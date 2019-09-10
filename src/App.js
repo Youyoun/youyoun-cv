@@ -9,21 +9,16 @@ import Project from "./components/project";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
 
-import logo from './logo.svg';
 import photo from './linkedin.jpeg'
-
-import './css/bootstrap.min.css';
-import './css/style.css';
-import './App.css';
 
 function App() {
     return (
-        <div className="App" id="colorlib-page">
+        <div id="colorlib-page">
             <Sidebar
                 photo={photo}
                 name="Younes Belkouchi"
                 title="Machine Learning and Software Engineer"/>
-            <div className="App-header" id="colorlib-main">
+            <div id="colorlib-main">
                 <Introduction/>
                 <About/>
                 <Experience/>

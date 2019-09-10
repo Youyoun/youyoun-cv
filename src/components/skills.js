@@ -1,6 +1,4 @@
 import React from 'react';
-import "../css/style.css";
-import "../css/bootstrap.min.css";
 
 class Skills extends React.Component {
     render() {
