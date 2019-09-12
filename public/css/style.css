@@ -302,6 +302,7 @@ figure figcaption {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    margin-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
