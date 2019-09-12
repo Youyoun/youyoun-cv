@@ -20,12 +20,13 @@ function Slide(props) {
 }
 
 function Button(props) {
+  let icon = props.iconClass ? <i className={props.iconClass}/> : null;
   return (
     <p>
       <a className="btn btn-primary btn-learn"
          href={props.link}
-         target="_blank" rel="noopener noreferrer">{props.text}
-        {props.iconClass ? <i className={props.iconClass}/> : null}
+         target="_blank" rel="noopener noreferrer" style={props.style}>
+        {props.text}{icon}
       </a>
     </p>
   )
@@ -43,10 +44,10 @@ export default function Introduction(props) {
                 link=""
                 text="View CV" iconClass="icon-download4"/>
             </Slide>
-            <Slide background="url(images/intro-1.jpg)">
-              <h1>I'm a tech enthousiast !</h1>
+            <Slide background="url(images/youyounDTY.jpg)">
+              <h1 style={{color: "white"}}>I'm a tech enthousiast !</h1>
               <Button
-                link="https://github.com/youyoun"
+                link="https://github.com/youyoun" style={{border: "1px solid #fff", color: "white"}}
                 text="View Projects" iconClass="icon-briefcase3"/>
             </Slide>
           </ul>
