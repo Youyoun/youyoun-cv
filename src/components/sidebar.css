@@ -1,0 +1,175 @@
+.sidebar {
+    text-align: center;
+}
+
+#sidebar {
+    padding-top: 4em;
+    padding-bottom: 40px;
+    float: left;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: -300px;
+    background: #f2f3f7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#sidebar.open {
+    -moz-transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+#sidebar-name {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: .5em;
+    display: block;
+    width: 100%;
+}
+
+#sidebar-job {
+    margin: 4px;
+}
+
+.round-img {
+    position: relative;
+    border-radius: 100px;
+}
+
+#sidebar-menu {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.glyphicon {
+    position: absolute;
+    font: normal normal 16px/1 'Glyphicons Halflings';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 4px;
+    left: 300px;
+    top: 0px;
+    z-index: 1001;
+    opacity: 0.5;
+}
+
+.glyphicon.active {
+    opacity: 1;
+}
+
+/* Add icons you will be using below */
+.glyphicon-fire:before {
+    content: '\e104';
+}
+
+.glyphicon-align-justify:before {
+    content: '\e137';
+}
+
+.glyphicon-eye-open:before {
+    content: '\e105';
+}
+
+#sidebar-menu {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 25% 0 0 0;
+}
+
+#sidebar-menu ul li {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#sidebar-menu ul li a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+    font-family: "Quicksand", Arial, sans-serif;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#sidebar-menu ul li a:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    background-color: #2c98f0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#sidebar-menu ul li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#sidebar-menu ul li a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#sidebar-menu ul li.active a {
+    color: #2c98f0;
+}
+
+#sidebar-menu ul li.active a:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+@media screen and (min-width: 768px) {
+    #sidebar {
+        width: 300px;
+        -moz-transform: translateX(300px);
+        -webkit-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+        -o-transform: translateX(300px);
+        transform: translateX(300px);
+        padding-top: 1em;
+    }
+
+    #sidebar-menu {
+        margin-top: 50%;
+    }
+
+    .glyphicon {
+        display: none !important;
+    }
+}

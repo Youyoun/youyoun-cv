@@ -1,28 +1,65 @@
 import React from 'react';
 
-function Sidebar(props) {
-  return (
-    <aside className="border" id="colorlib-aside">
-      <div className="text-center">
-        <div className="author-img" style={{backgroundImage: `url(${props.photo})`}}/>
-        <h1 id="colorlib-logo">{props.name}</h1>
-        <span className="position">{props.title}</span>
-      </div>
-      <nav id="colorlib-main-menu" className="navbar">
-        <div id="navbar" className="collapse in" aria-expanded="true" style={{marginTop: "50%"}}>
+import Button from "react-bootstrap/Button";
+import "./sidebar.css"
+
+class NavButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false,
+    }
+  }
+
+  toggleActive() {
+    this.setState({active: true})
+  }
+
+  render() {
+    return (
+      <li onClick={() => this.toggleActive()} className={this.state.active ? "active" : ""}>
+        <a href="#">
+          {this.props.section}
+        </a>
+      </li>
+    )
+  }
+}
+
+class Sidebar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+    }
+  }
+
+  handleClick() {
+    this.setState({open: !this.state.open})
+  }
+
+  render() {
+    return (
+      <aside className={`sidebar ${this.state.open ? "open" : ""}`} id="sidebar">
+        <Button variant="outline-primary" onClick={() => this.handleClick()}
+                className={`glyphicon glyphicon-align-justify ${this.state.open ? "active" : ""}`}/>
+        <img className="round-img" src={this.props.photo}/>
+        <h1 id="sidebar-name">{this.props.name}</h1>
+        <span className="sidebar-job position">{this.props.title}</span>
+        <nav id="sidebar-menu" className="navbar">
           <ul>
-            <li className="active"><a href="#">Introduction</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <NavButton section={"Introduction"}/>
+            <NavButton section={"About"}/>
+            <NavButton section={"Experience"}/>
+            <NavButton section={"Education"}/>
+            <NavButton section={"Project"}/>
+            <NavButton section={"Skills"}/>
+            <NavButton section={"Contact"}/>
           </ul>
-        </div>
-      </nav>
-    </aside>
-  )
+        </nav>
+      </aside>
+    )
+  }
 }
 
 export default Sidebar;

@@ -1,0 +1,71 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: fadeOut2;
+    animation-duration: 2s;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: fadeIn2;
+    animation-duration: 1s;
+}
+
+.slide-text,
+.slide-container {
+    height: 100%;
+}
+
+#introduction {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadeOut2 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Standard syntax */
+@keyframes fadeOut2 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadeIn2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

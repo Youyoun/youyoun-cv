@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "./App.css"
+
 import Sidebar from "./components/sidebar";
 import Introduction from "./components/introduction";
 import About from "./components/about";
@@ -13,12 +15,12 @@ import photo from './linkedin.jpeg'
 
 function App() {
   return (
-    <div id="colorlib-page">
+    <div>
       <Sidebar
         photo={photo}
         name="Younes Belkouchi"
         title="Machine Learning and Software Engineer"/>
-      <div id="colorlib-main">
+      <div id="app">
         <Introduction/>
         <About/>
         <Experience/>
