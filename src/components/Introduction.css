@@ -6,19 +6,26 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .slide {
+        text-align: left;
+    }
 }
 
 .fadeOut {
-    -webkit-animation-name: fadeOut2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: fadeOut; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: fadeOut2;
+    animation-name: fadeOut;
     animation-duration: 2s;
 }
 
 .fadeIn {
-    -webkit-animation-name: fadeIn2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-    animation-name: fadeIn2;
+    animation-name: fadeIn;
     animation-duration: 1s;
 }
 
@@ -33,7 +40,7 @@
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes fadeOut2 {
+@-webkit-keyframes fadeOut {
     from {
         opacity: 1;
     }
@@ -43,7 +50,7 @@
 }
 
 /* Standard syntax */
-@keyframes fadeOut2 {
+@keyframes fadeOut {
     from {
         opacity: 1;
     }
@@ -53,7 +60,7 @@
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes fadeIn2 {
+@-webkit-keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -63,11 +70,33 @@
 }
 
 /* Standard syntax */
-@keyframes fadeIn2 {
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
     }
+}
+
+.button {
+    background: 0;
+    color: black;
+    border: 1px solid black;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+.button:hover {
+    background: 0;
+    color: black;
+    border: 1px solid black;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    font-weight: 400;
 }

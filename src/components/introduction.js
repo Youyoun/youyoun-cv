@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import IcoMoon from "react-icomoon";
 import "./Introduction.css";
 
 class Slide extends Component {
@@ -21,7 +21,7 @@ class Slide extends Component {
       <div className={`slide`} style={{backgroundImage: this.props.background}}>
         <Container>
           <Col xs={12} md={8}>
-              {this.props.children}
+            {this.props.children}
           </Col>
         </Container>
       </div>
@@ -30,15 +30,13 @@ class Slide extends Component {
 }
 
 function Button(props) {
-  let icon = props.iconClass ? <i className={props.iconClass}/> : null;
+  let icon = props.iconClass ? <IcoMoon icon={props.iconClass}/> : null;
   return (
-    <p>
-      <a className="btn btn-primary"
-         href={props.link}
-         target="_blank" rel="noopener noreferrer" style={props.style}>
-        {props.text}{icon}
-      </a>
-    </p>
+    <a className="btn btn-primary button"
+       href={props.link}
+       target="_blank" rel="noopener noreferrer" style={props.style}>
+      {props.text} {icon}
+    </a>
   )
 }
 
@@ -99,13 +97,13 @@ export default class Introduction extends Component {
             <h1>Hello! <br/>I'm Younes</h1>
             <Button
               link=""
-              text="View CV" iconClass="icon-download4"/>
+              text="View CV" iconClass="folder-download"/>
           </Slide>
           <Slide background="url(images/youyounDTY.jpg)">
             <h1 style={{color: "white"}}>I'm a tech enthousiast !</h1>
             <Button
-              link="https://github.com/youyoun" style={{border: "1px solid #fff", color: "white"}}
-              text="View Projects" iconClass="icon-briefcase3"/>
+              link="https://github.com/youyoun" style={{border: "1px solid #fff", color: "white", background: 0}}
+              text="View Projects" iconClass="briefcase"/>
           </Slide>
         </Carousel>
       </section>
