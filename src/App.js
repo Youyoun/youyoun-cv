@@ -7,7 +7,6 @@ import Introduction from "./components/introduction";
 import About from "./components/about";
 import Education from "./components/education";
 import Experience from "./components/experience";
-import Project from "./components/project";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
 
@@ -22,12 +21,11 @@ function App() {
         title="Machine Learning and Software Engineer"/>
       <div id="app">
         <Introduction/>
-        <About/>
-        <Experience/>
-        <Education/>
-        {/*<Project/>*/}
-        <Skills/>
-        <Contact/>
+        {/*<About/>*/}
+        {/*<Experience/>*/}
+        {/*<Education/>*/}
+        {/*<Skills/>*/}
+        {/*<Contact/>*/}
       </div>
     </div>
   );

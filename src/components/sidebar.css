@@ -156,7 +156,6 @@
 
 @media screen and (min-width: 768px) {
     #sidebar {
-        width: 300px;
         -moz-transform: translateX(300px);
         -webkit-transform: translateX(300px);
         -ms-transform: translateX(300px);
