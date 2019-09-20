@@ -10,11 +10,6 @@
     transition: .5s;
 }
 
-@media screen and (min-width: 768px) {
-    .slide {
-        text-align: left;
-    }
-}
 
 .slide.fadeIn {
     opacity: 1;
@@ -44,6 +39,7 @@
     letter-spacing: 2px;
     padding: 10px 15px;
     font-weight: 400;
+    width: 80vw;
 }
 
 .button:hover {
@@ -55,4 +51,14 @@
     letter-spacing: 2px;
     padding: 10px 15px;
     font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .slide {
+        text-align: left;
+    }
+
+    .button {
+        width: fit-content;
+    }
 }

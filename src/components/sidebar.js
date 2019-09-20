@@ -11,13 +11,10 @@ class NavButton extends React.Component {
     }
   }
 
-  toggleActive() {
-    this.setState({active: true})
-  }
-
   render() {
     return (
-      <li onClick={() => this.toggleActive()} className={this.state.active ? "active" : ""}>
+      <li onFocus={() => this.setState({active: true})} onBlur={() => this.setState({active: false})}
+          className={this.state.active ? "active" : ""}>
         <a href="#">
           {this.props.section}
         </a>
