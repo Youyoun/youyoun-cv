@@ -21,11 +21,13 @@ function App() {
         title="Machine Learning and Software Engineer"/>
       <div id="app">
         <Introduction/>
-        {/*<About/>*/}
-        {/*<Experience/>*/}
-        {/*<Education/>*/}
-        {/*<Skills/>*/}
-        {/*<Contact/>*/}
+        <div class="pad-sides">
+          <About/>
+          {/*<Experience/>*/}
+          {/*<Education/>*/}
+          {/*<Skills/>*/}
+          {/*<Contact/>*/}
+        </div>
       </div>
     </div>
   );

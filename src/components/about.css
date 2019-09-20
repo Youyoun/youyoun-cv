@@ -1,0 +1,184 @@
+.about {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+.narrow-content {
+    padding: 0;
+}
+
+.heading-meta {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.heading {
+    font-size: 18px;
+    margin-bottom: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    position: relative;
+}
+
+
+.services {
+    margin-bottom: 80px;
+    padding: 1.5em;
+    -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    border-bottom: 2px solid #2c98f0;
+    position: relative;
+    z-index: 0;
+}
+
+.services .icon {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    display: table;
+    margin: 0 auto;
+    background: #2c98f0;
+    color: white;
+    font-size: 30px;
+}
+
+.services .icon:before, .services .icon:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: '';
+}
+
+.services .icon:before {
+    top: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 30px 50px;
+    border-color: transparent transparent #2c98f0 transparent;
+}
+
+.services .icon:after {
+    bottom: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 50px 0 50px;
+    border-color: #2c98f0 transparent transparent transparent;
+}
+
+.services .desc {
+    margin-top: 60px;
+}
+
+.services .desc h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.services.color-2 {
+    border-bottom: 2px solid #ec5453;
+}
+
+.services.color-3 {
+    border-bottom: 2px solid #f9bf3f;
+}
+
+.services.color-4 {
+    border-bottom: 2px solid #a84cb8;
+}
+
+.services.color-5 {
+    border-bottom: 2px solid #2fa499;
+}
+
+.services.color-6 {
+    border-bottom: 2px solid #4054b2;
+}
+
+.services.color-2 .icon {
+    background: #ec5453;
+}
+
+.services.color-2 .icon:before {
+    border-color: transparent transparent #ec5453 transparent;
+}
+
+.services.color-2 .icon:after {
+    border-color: #ec5453 transparent transparent transparent;
+}
+
+.services.color-3 .icon {
+    background: #f9bf3f;
+}
+
+.services.color-3 .icon:before {
+    border-color: transparent transparent #f9bf3f transparent;
+}
+
+.services.color-3 .icon:after {
+    border-color: #f9bf3f transparent transparent transparent;
+}
+
+.services.color-4 .icon {
+    background: #a84cb8;
+}
+
+.services.color-4 .icon:before {
+    border-color: transparent transparent #a84cb8 transparent;
+}
+
+.services.color-4 .icon:after {
+    border-color: #a84cb8 transparent transparent transparent;
+}
+
+.services.color-5 .icon {
+    background: #2fa499;
+}
+
+.services.color-5 .icon:before {
+    border-color: transparent transparent #2fa499 transparent;
+}
+
+.services.color-5 .icon:after {
+    border-color: #2fa499 transparent transparent transparent;
+}
+
+.services.color-6 .icon {
+    background: #4054b2;
+}
+
+.services.color-6 .icon:before {
+    border-color: transparent transparent #4054b2 transparent;
+}
+
+.services.color-6 .icon:after {
+    border-color: #4054b2 transparent transparent transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .heading {
+        margin-bottom: 4em;
+    }
+
+    .services {
+        margin-bottom: 4em;
+    }
+}
