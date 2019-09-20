@@ -23,7 +23,7 @@ function App() {
         <Introduction/>
         <div class="pad-sides">
           <About/>
-          {/*<Experience/>*/}
+          <Experience/>
           {/*<Education/>*/}
           {/*<Skills/>*/}
           {/*<Contact/>*/}

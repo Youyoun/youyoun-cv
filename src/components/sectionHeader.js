@@ -1,12 +1,35 @@
 import React from "react";
+import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
 
-export default function SectionHeader(props) {
+const heading = {
+  marginBottom: "15px",
+  display: "block",
+  fontSize: "10px",
+  textTransform: "uppercase",
+  color: "#999999",
+  fontWeight: "500",
+  letterSpacing: "5px",
+};
+
+const headingMeta = {
+  fontSize: "18px",
+  marginBottom: "3em",
+  fontWeight: "700",
+  textTransform: "uppercase",
+  letterSpacing: "5px",
+  lineHeight: "1.8",
+  position: "relative",
+};
+
+
+export default function SectionHeader({title, subTitle}) {
   return (
-    <div className="row">
-      <div className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft">
-        <span className="heading-meta">{props.title}</span>
-        <h2 className="colorlib-heading animate-box">{props.subTitle}</h2>
-      </div>
-    </div>
+    <Row className="row">
+      <Col md={6}>
+        <span style={heading}>{title}</span>
+        <h2 style={headingMeta}>{subTitle}</h2>
+      </Col>
+    </Row>
   )
 }
