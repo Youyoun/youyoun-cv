@@ -4,29 +4,16 @@ import Col from "react-bootstrap/Col";
 import IcoMoon from "react-icomoon";
 import "./Introduction.css";
 
-class Slide extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fade: false
-    }
-  }
-
-  componentWillUnmount() {
-    this.setState({fade: true})
-  }
-
-  render() {
-    return (
-      <div className={`slide`} style={{backgroundImage: this.props.background}}>
-        <Container>
-          <Col xs={12} md={8}>
-            {this.props.children}
-          </Col>
-        </Container>
-      </div>
-    )
-  }
+function Slide({background, children}) {
+  return (
+    <div className={`slide`} style={{backgroundImage: background}}>
+      <Container>
+        <Col xs={12} md={8}>
+          {children}
+        </Col>
+      </Container>
+    </div>
+  )
 }
 
 function Button(props) {
@@ -50,7 +37,6 @@ class Carousel extends Component {
       start: Date.now(),
       timer: 0,
       interval: 10,
-      fade: "fadeIn"
     }
   }
 
@@ -59,12 +45,19 @@ class Carousel extends Component {
       slides: this.props.children,
       n_slides: this.props.children.length,
       interval: this.props.autoSwapDelay,
+      fadeEffect: ""
     });
     this.startTimer();
   }
 
   nextSlide() {
-    this.setState({current_slide: (this.state.current_slide + 1) % this.state.n_slides})
+    this.setState({fadeEffect: "fadeOut"}, () => {
+        setTimeout(() => this.setState({
+          current_slide: (this.state.current_slide + 1) % this.state.n_slides,
+          fadeEffect: "fadeIn"
+        }), 2000)
+      }
+    )
   }
 
   startTimer() {
@@ -81,7 +74,7 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div className={"slide-container"}>
+      <div className={`slide-container ${this.state.fadeEffect}`}>
         {this.state.slides[this.state.current_slide]}
       </div>
     )
@@ -92,7 +85,7 @@ export default class Introduction extends Component {
   render() {
     return (
       <section id="introduction">
-        <Carousel autoSwapDelay={10}>
+        <Carousel autoSwapDelay={7}>
           <Slide background="url(images/intro-1.jpg)">
             <h1>Hello! <br/>I'm Younes</h1>
             <Button

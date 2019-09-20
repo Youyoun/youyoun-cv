@@ -7,6 +7,7 @@
     background-position: bottom center;
     align-items: center;
     text-align: center;
+    transition: .5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -15,18 +16,12 @@
     }
 }
 
-.fadeOut {
-    -webkit-animation-name: fadeOut; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: fadeOut;
-    animation-duration: 2s;
+.slide.fadeIn {
+    opacity: 1;
 }
 
-.fadeIn {
-    -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-    animation-name: fadeIn;
-    animation-duration: 1s;
+.slide.fadeOut {
+    opacity: 0;
 }
 
 .slide-text,
@@ -39,45 +34,6 @@
     height: 100vh;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-/* Standard syntax */
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Standard syntax */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 .button {
     background: 0;
