@@ -21,10 +21,10 @@ function App() {
         title="Machine Learning and Software Engineer"/>
       <div id="app">
         <Introduction/>
-        <div class="pad-sides">
+        <div className="pad-sides">
           <About/>
           <Experience/>
-          {/*<Education/>*/}
+          <Education/>
           {/*<Skills/>*/}
           {/*<Contact/>*/}
         </div>
