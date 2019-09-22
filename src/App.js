@@ -26,7 +26,7 @@ function App() {
           <Experience/>
           <Education/>
           <Skills/>
-          {/*<Contact/>*/}
+          <Contact/>
         </div>
       </div>
     </div>
