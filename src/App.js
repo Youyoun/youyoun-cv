@@ -60,8 +60,7 @@ function App() {
         const ele = ref.current;
         if (ele) {
           const {offsetBottom, offsetTop} = getDimensions(ele);
-          console.log(scrollPosition, offsetTop, offsetBottom);
-          return scrollPosition >= offsetTop && scrollPosition < offsetBottom;
+          return scrollPosition >= (offsetTop > 0 ? offsetTop - 300 : offsetTop ) && scrollPosition < offsetBottom - 300;
         }
       });
       if (selected && selected.section !== visibleSection) {
