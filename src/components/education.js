@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Collapse from "react-bootstrap/Collapse";
 import SectionHeader from "./sectionHeader";
 import "./education.css"
 
@@ -21,11 +22,13 @@ function CollapsableButton(props) {
           </a>
         </h4>
       </div>
-      <div className={`panel-collapse collapse ${collapse ? "show" : ""}`}>
-        <div className="panel-body">
-          {props.children}
+      <Collapse in={collapse}>
+        <div style={{margin: 0, padding: 0}}>
+          <div className="panel-body">
+            {props.children}
+          </div>
         </div>
-      </div>
+      </Collapse>
     </div>
   )
 }
