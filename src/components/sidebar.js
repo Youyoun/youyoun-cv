@@ -3,6 +3,13 @@ import React from 'react';
 import Button from "react-bootstrap/Button";
 import "./sidebar.css"
 
+const scrollTo = ele => {
+  ele.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+};
+
 class NavButton extends React.Component {
   constructor(props) {
     super(props);
@@ -14,7 +21,7 @@ class NavButton extends React.Component {
   render() {
     return (
       <li onFocus={() => this.setState({active: true})} onBlur={() => this.setState({active: false})}
-          className={this.state.active ? "active" : ""}>
+          className={this.props.active ? "active" : ""}>
         <a href="#">
           {this.props.section}
         </a>
@@ -45,13 +52,13 @@ class Sidebar extends React.Component {
         <span className="sidebar-job position">{this.props.title}</span>
         <nav id="sidebar-menu" className="navbar">
           <ul>
-            <NavButton section={"Introduction"}/>
-            <NavButton section={"About"}/>
-            <NavButton section={"Experience"}/>
-            <NavButton section={"Education"}/>
-            <NavButton section={"Project"}/>
-            <NavButton section={"Skills"}/>
-            <NavButton section={"Contact"}/>
+            <NavButton active={this.props.visibleSection === "Introduction"} section={"Introduction"}/>
+            <NavButton active={this.props.visibleSection === "About"} section={"About"}/>
+            <NavButton active={this.props.visibleSection === "Experience"} section={"Experience"}/>
+            <NavButton active={this.props.visibleSection === "Education"} section={"Education"}/>
+            {/*<NavButton active={this.props.visibleSection === "Project"} section={"Project"}/>*/}
+            <NavButton active={this.props.visibleSection === "Skills"} section={"Skills"}/>
+            <NavButton active={this.props.visibleSection === "Contact"} section={"Contact"}/>
           </ul>
         </nav>
       </aside>
