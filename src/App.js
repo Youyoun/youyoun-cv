@@ -79,6 +79,7 @@ function App() {
   return (
     <div>
       <Sidebar
+        refs={sectionRefs}
         photo={photo}
         name="Younes Belkouchi"
         title="Machine Learning and Software Engineer"
