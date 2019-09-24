@@ -10,11 +10,13 @@ function TimelinePane(props) {
     <article className="timeline-entry">
       <div className="timeline-entry-inner">
         <div className={"timeline-icon color-" + props.colorId}>
-          <IcoMoon icon={props.icon}/>
+          {props.icon ? <IcoMoon icon={props.icon}/> : ""}
         </div>
-        <div className="timeline-label">
-          {props.children}
-        </div>
+        {props.children ?
+          <div className="timeline-label">
+            {props.children}
+          </div> : ""
+        }
       </div>
     </article>
   )
@@ -77,6 +79,7 @@ export default function Experience() {
                   in France.
                 </div>
               </TimelinePane>
+              <TimelinePane colorId={"none"}/>
             </div>
           </Col>
         </Row>
