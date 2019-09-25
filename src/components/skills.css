@@ -3,10 +3,14 @@
     padding-bottom: 8em;
 }
 
+.progress-wrap {
+    margin-bottom: 20px;
+}
+
 .progress-wrap h3 {
     font-size: 16px;
     font-family: "Quicksand", Arial, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .progress {

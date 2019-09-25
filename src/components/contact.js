@@ -22,8 +22,9 @@ class Contact extends React.Component {
     this.setState({form: {...this.state.form, [evt.target.name]: evt.target.value}})
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
     console.log(this.state.form);
+    e.preventDefault();
   }
 
   render() {
@@ -32,7 +33,7 @@ class Contact extends React.Component {
         <SectionHeader title={"Get in Touch"} subTitle={"Contact"}/>
         <Row className="justify-content-md-center">
           <Col md={12}>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={(e) => this.handleSubmit(e)}>
               <div className="form-group">
                 <input name="name" value={this.state.form.name} onChange={(e) => this.fillForm(e)}
                        type="text" className="form-control" placeholder="Name"/>

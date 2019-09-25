@@ -26,10 +26,10 @@ class Skills extends React.Component {
         <SectionHeader title={"My skills"} subTitle={"Skills"}/>
         <Row>
           <Col md={12}>
-            <p>Need to think about this</p>
+            <p>These are some of my skills:</p>
           </Col>
           <SkillBar skillName={"Python"} colorId={1} percentProficiency={95}/>
-          <SkillBar skillName={"Web development"} colorId={2} percentProficiency={75}/>
+          <SkillBar skillName={"Web development"} colorId={2} percentProficiency={80}/>
           <SkillBar skillName={"Docker"} colorId={3} percentProficiency={80}/>
           <SkillBar skillName={"Linux"} colorId={4} percentProficiency={90}/>
           <SkillBar skillName={"Git"} colorId={6} percentProficiency={80}/>
