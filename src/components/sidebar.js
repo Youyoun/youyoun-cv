@@ -52,13 +52,9 @@ class Sidebar extends React.Component {
         <span className="sidebar-job position">{this.props.title}</span>
         <nav id="sidebar-menu" className="navbar">
           <ul>
-            <NavButton onClick={() => scrollTo(this.props.refs[0].ref.current)} selectedSection={this.props.visibleSection} section={"Introduction"}/>
-            <NavButton onClick={() => scrollTo(this.props.refs[1].ref.current)} selectedSection={this.props.visibleSection} section={"About"}/>
-            <NavButton onClick={() => scrollTo(this.props.refs[2].ref.current)} selectedSection={this.props.visibleSection} section={"Experience"}/>
-            <NavButton onClick={() => scrollTo(this.props.refs[3].ref.current)} selectedSection={this.props.visibleSection} section={"Education"}/>
-            {/*<NavButton active={this.props.visibleSection === "Project"} section={"Project"}/>*/}
-            <NavButton onClick={() => scrollTo(this.props.refs[4].ref.current)} selectedSection={this.props.visibleSection} section={"Skills"}/>
-            <NavButton onClick={() => scrollTo(this.props.refs[5].ref.current)} selectedSection={this.props.visibleSection} section={"Contact"}/>
+            {Object.keys(this.props.sections).map((key, index) => <NavButton
+              onClick={() => scrollTo(this.props.sections[key].current)} key={index} section={key}
+              selectedSection={this.props.visibleSection}/>)}
           </ul>
         </nav>
       </aside>

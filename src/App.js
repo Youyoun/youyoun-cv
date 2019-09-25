@@ -42,29 +42,32 @@ function App() {
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
 
-  const sectionRefs = [
-    {section: "Introduction", ref: introductionRef},
-    {section: "About", ref: aboutRef},
-    {section: "Experience", ref: experienceRef},
-    {section: "Education", ref: educationRef},
-    // {section: "Project", ref: projectRef},
-    {section: "Skills", ref: skillsRef},
-    {section: "Contact", ref: contactRef},
-  ];
+  const sections = {
+    "Introduction": introductionRef,
+    "About": aboutRef,
+    "Experience": experienceRef,
+    "Education": educationRef,
+    "Skills": skillsRef,
+    "Contact": contactRef,
+  };
 
   useEffect(() => {
     function handleScroll() {
       const scrollPosition = window.scrollY;
 
-      const selected = sectionRefs.find(({section, ref}) => {
-        const ele = ref.current;
+      let selected;
+      for (var section in sections) {
+        const ele = sections[section].current;
         if (ele) {
           const {offsetBottom, offsetTop} = getDimensions(ele);
-          return scrollPosition >= (offsetTop > 0 ? offsetTop - 300 : offsetTop ) && scrollPosition < offsetBottom - 300;
+          if (scrollPosition >= (offsetTop > 0 ? offsetTop - 300 : offsetTop) && scrollPosition < offsetBottom - 300) {
+            selected = section;
+            break
+          }
         }
-      });
-      if (selected && selected.section !== visibleSection) {
-        setVisibleSection(selected.section);
+      }
+      if (selected !== visibleSection) {
+        setVisibleSection(selected);
       } else if (!selected && visibleSection) {
         setVisibleSection(null);
       }
@@ -75,11 +78,11 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [visibleSection, sectionRefs]);
+  }, [visibleSection, sections]);
   return (
     <div>
       <Sidebar
-        refs={sectionRefs}
+        sections={sections}
         photo={photo}
         name="Younes Belkouchi"
         title="Machine Learning and Software Engineer"
