@@ -10,6 +10,10 @@
     transition: .5s;
 }
 
+.no-margin-left {
+    margin-left: 0px;
+}
+
 
 .slide.fadeIn {
     opacity: 1;
@@ -22,6 +26,7 @@
 .slide-text,
 .slide-container {
     height: 100%;
+    margin-left: 0px;
 }
 
 #introduction {
@@ -38,8 +43,8 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 10px 15px;
-    font-weight: 400;
     width: 80vw;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -53,6 +58,15 @@
     font-weight: 400;
 }
 
+#slide1-text {
+    color: white;
+}
+
+#slide1-button {
+    color: white;
+    border: 1px solid white;
+}
+
 @media screen and (min-width: 768px) {
     .slide {
         text-align: left;
@@ -60,5 +74,14 @@
 
     .button {
         width: fit-content;
+    }
+
+    #slide1-text {
+        color: black;
+    }
+
+    #slide1-button {
+        border: 1px solid black;
+        color: black;
     }
 }

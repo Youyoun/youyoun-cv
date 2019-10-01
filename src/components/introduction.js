@@ -7,7 +7,7 @@ import "./Introduction.css";
 function Slide({background, children}) {
   return (
     <div className={`slide`} style={{backgroundImage: background}}>
-      <Container>
+      <Container className={"no-margin-left"}>
         <Col xs={12} md={8}>
           {children}
         </Col>
@@ -19,7 +19,7 @@ function Slide({background, children}) {
 function Button(props) {
   let icon = props.iconClass ? <IcoMoon icon={props.iconClass}/> : null;
   return (
-    <a className="btn btn-primary button"
+    <a className="btn btn-primary button" id={props.id}
        href={props.link}
        target="_blank" rel="noopener noreferrer" style={props.style}>
       {props.text} {icon}
@@ -87,8 +87,9 @@ export default class Introduction extends Component {
       <section id="introduction">
         <Carousel autoSwapDelay={7}>
           <Slide background="url(images/intro-1.jpg)">
-            <h1>Hello! <br/>I'm Younes</h1>
+            <h1 id={"slide1-text"}>Hello! <br/>I'm Younes</h1>
             <Button
+              id={"slide1-button"}
               link=""
               text="View CV" iconClass="folder-download"/>
           </Slide>
