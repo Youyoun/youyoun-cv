@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/youyoun-cv/static/css/main.2ed35a96.chunk.css",
+    "main.css": "/youyoun-cv/static/css/main.ee971b88.chunk.css",
     "main.js": "/youyoun-cv/static/js/main.fe4e9061.chunk.js",
     "main.js.map": "/youyoun-cv/static/js/main.fe4e9061.chunk.js.map",
     "runtime~main.js": "/youyoun-cv/static/js/runtime~main.47469919.js",
@@ -9,10 +9,10 @@
     "static/js/2.4b6fe45c.chunk.js": "/youyoun-cv/static/js/2.4b6fe45c.chunk.js",
     "static/js/2.4b6fe45c.chunk.js.map": "/youyoun-cv/static/js/2.4b6fe45c.chunk.js.map",
     "index.html": "/youyoun-cv/index.html",
-    "precache-manifest.be66d3bbb6f6418d193639bddbdf0576.js": "/youyoun-cv/precache-manifest.be66d3bbb6f6418d193639bddbdf0576.js",
+    "precache-manifest.50effbe1007562e2796f8b2df712fd41.js": "/youyoun-cv/precache-manifest.50effbe1007562e2796f8b2df712fd41.js",
     "service-worker.js": "/youyoun-cv/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/youyoun-cv/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.2ed35a96.chunk.css.map": "/youyoun-cv/static/css/main.2ed35a96.chunk.css.map",
+    "static/css/main.ee971b88.chunk.css.map": "/youyoun-cv/static/css/main.ee971b88.chunk.css.map",
     "static/media/linkedin.jpeg": "/youyoun-cv/static/media/linkedin.53621746.jpeg"
   }
 }
