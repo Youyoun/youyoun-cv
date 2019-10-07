@@ -3,13 +3,18 @@
     padding-bottom: 8em;
 }
 
+.collapse-button {
+    width: 100%;
+}
+
 .fancy-collapse-panel .panel-default > .panel-heading {
     padding: 0;
     margin-top: 30px;
     transition: 1s;
 }
 
-.panel-heading a {
+.panel-heading button {
+    text-align: left;
     padding: 20px 25px;
     display: block;
     width: 100%;

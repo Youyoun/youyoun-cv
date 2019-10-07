@@ -17,9 +17,9 @@ function CollapsableButton(props) {
     <div className="panel panel-default">
       <div className="panel-heading">
         <h4 className="panel-title" style={{margin: 0}}>
-          <a href="#education" onClick={toggleCollapse} className={collapse ? "collapsed" : ""}>
+          <button className={"collapse-button"} onClick={toggleCollapse} className={collapse ? "collapsed" : ""}>
             {props.title}
-          </a>
+          </button>
         </h4>
       </div>
       <Collapse in={collapse}>
@@ -45,7 +45,7 @@ export default function Education() {
                 <Col md={12}>
                   <p>
                     Ecole Centrale Paris is a prestigious Engineering School, member of France’s Grandes Ecoles, that
-                    uses a highly selective internationnal admission process.
+                    uses a highly selective international admission process.
                   </p>
                   Courses include:
                   <Row>
@@ -66,20 +66,11 @@ export default function Education() {
               </CollapsableButton>
               <CollapsableButton title="Al khawarizmi Foundation Courses" buttonId="2">
                 <p>
-                  Fundation courses is a 2-year school program following high school where students study intensively
+                  Foundation courses is a 2-year school program following high school where students study intensively
                   science and are forced to take an international ranking test where they are highly selected
                   depending on their rank in order to enroll to their chosen schools.
                 </p>
               </CollapsableButton>
-              {/*<CollapsableButton title="Ryad Al Maari                  <div className="col-md-6">
-                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                      language ocean.</p>
-                  </div>fa" buttonId="3">*/}
-              {/*  <p>*/}
-              {/*    A Morroccan school where I've spent most of school year, from late primary until I obtained my high*/}
-              {/*    school diploma.*/}
-              {/*  </p>*/}
-              {/*</CollapsableButton>*/}
             </div>
           </div>
         </Col>
