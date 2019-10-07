@@ -13,13 +13,13 @@ function AboutDescription() {
           <span className="heading-meta">About Me</span>
           <h2 className="heading">Who Am I?</h2>
           <p>
-            I am an graduate student from Ecole Centrale Paris, a leading french engineering school.
+            I am a graduate student from Ecole Centrale Paris, a leading french engineering school.
             I have always been passionate about IT. I am currently taking a huge interest in everything
             that is related to machine learning or deep learning, and especially their application to the
             industry.
           </p>
           <p>
-            Beside my adoration for technlogy, I also enjoy playing video games and indoor climbing.
+            Beside my adoration for technology, I also enjoy playing video games and indoor climbing.
           </p>
         </Col>
       </Row>
