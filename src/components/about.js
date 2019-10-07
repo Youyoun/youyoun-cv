@@ -36,12 +36,29 @@ function AboutExpertise() {
         </Col>
       </Row>
       <Row>
-        <Pannel colorId={5} title="Machine Learning" icon="database"
-                text="I have followed multiple courses related to machine learning and deep learning, and worked on different projects that use these tools. My current work at BNP Paribas is mainly focused on deep learning."/>
-        <Pannel colorId={1} title="Fullstack Development" icon="terminal"
-                text="I have experience using Python and JS frameworks such as React and NodeJs, and am comfortable with HTML and CSS."/>
-        <Pannel colorId={3} title="Data Structures & Algorithms" icon="omega"
-                text="Since I studied computer science, I have a good grasp over concepts related to algorithmic, data structure or mathematics"/>
+        <Pannel colorId={5} title="Machine Learning" icon="database">
+          <p>
+            I have followed multiple courses related to machine learning and deep learning,
+            and worked on different projects that use these tools. <br/>
+            My current work at BNP Paribas is mainly focused on deep learning and automatic speech recognition.
+          </p>
+        </Pannel>
+        <Pannel colorId={1} title="Fullstack Development" icon="terminal">
+          <p>
+            I have followed a tech intensive track called the digital tech year during which I honed my Fullstack
+            Development skills. <br/>
+            I have experience developing frontend and backend using multiple tools such as python or javascript.
+            This website was made using ReactJs.
+          </p>
+        </Pannel>
+        <Pannel colorId={3} title="Data Structures & Algorithms" icon="omega">
+          <p>
+            Since I studied computer science, I have a good grasp over concepts related to algorithmic,
+            data structure or mathematics. <br/>
+            I try to keep a hybrid profile where I am able to comprehend mathematics but also develop software based
+            on these theories.
+          </p>
+        </Pannel>
       </Row>
     </section>
   )
@@ -52,11 +69,11 @@ function Pannel(props) {
     <Col md={4} style={{textAlign: "center"}}>
       <div className={"services color-" + props.colorId} style={{height: "350px"}}>
         <div className="icon">
-            <IcoMoon icon={props.icon} className="icon" style={{height: "100%"}}/>
+          <IcoMoon icon={props.icon} className="icon" style={{height: "100%"}}/>
         </div>
         <div className="desc">
           <h3>{props.title} </h3>
-          <p>{props.text}</p>
+          {props.children}
         </div>
       </div>
     </Col>

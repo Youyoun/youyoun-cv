@@ -34,11 +34,11 @@ export default function Experience() {
                 <h2>Data Science Internship at BNPP CIB Analytics Consulting - AI
                   Lab <span>(2019-present, Paris FR)</span>
                 </h2>
-                <p>I joined BNP Paribas as a intern working on Data science. My work involves researching new
-                  techniques used in state of the art models
-                  and test them to validate these results. Multiple framework have been adapted to the use case of
-                  the lab. I have also implemented some models for the sake of testing.
-                  I've deepened my knowledge of machine learning throughout this internship, and was able to see how
+                <p>
+                  I joined BNP Paribas as a Data science intern. My work involves researching new
+                  techniques used in state of the art models and test them to validate these results. <br/>
+                  Through this internship, I was able to deepen my knowledge of machine learning and see how ML software
+                  can be used in the industry.
                 </p>
               </TimelinePane>
               <TimelinePane colorId={4} icon={"pencil"}>
@@ -46,10 +46,11 @@ export default function Experience() {
                 <p>
                   During my internship at xBrain, I had the opportunity to work with a very passionate team on a
                   subject involving multiple tasks, be it machine learning, full stack development and even
-                  algorithm optimisation.
-                  I used NLP for processing textual data, different clusterisation algorithms. I also developed
-                  micro services that interact with each other using API's. These micro services were all
-                  dockerized.
+                  algorithm optimisation. <br/>
+                  I used NLP for processing textual data, different clusterisation algorithms on huge quantity of
+                  scrapped data. <br/>
+                  I also developed micro services that interact with each other using API's. These micro services were
+                  all dockerized.
                 </p>
               </TimelinePane>
               <TimelinePane colorId={5} icon={"pencil"}>
