@@ -67,7 +67,7 @@ function AboutExpertise() {
 function Pannel(props) {
   return (
     <Col md={4} style={{textAlign: "center"}}>
-      <div className={"services color-" + props.colorId} style={{height: "350px"}}>
+      <div className={"services color-" + props.colorId}>
         <div className="icon">
           <IcoMoon icon={props.icon} className="icon" style={{height: "100%"}}/>
         </div>
