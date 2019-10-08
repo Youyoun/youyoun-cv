@@ -90,7 +90,7 @@ export default class Introduction extends Component {
             <h1 id={"slide1-text"}>Hello! <br/>I'm Younes</h1>
             <Button
               id={"slide1-button"}
-              link=""
+              link="CV_younes_belkouchi.pdf"
               text="View CV" iconClass="folder-download"/>
           </Slide>
           <Slide background="url(images/youyounDTY.jpg)">
