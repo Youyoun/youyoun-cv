@@ -30,9 +30,18 @@ export default function Experience() {
         <Row>
           <Col md={12}>
             <div className="timeline-centered">
-              <TimelinePane colorId={3} icon={"pencil"}>
+              <TimelinePane colorId={2} icon={"images"}>
+                <h2>Data scientist at Institut Gustave Roussy <span>(03/2020-present, Paris FR)</span>
+                </h2>
+                <p>
+                  My current work involves identifying relapse in breast cancer using histopathology images. <br/>
+                  It involves using Deep Neural networks to identify regions that are more susceptible to cause a
+                  relapse in a patient.
+                </p>
+              </TimelinePane>
+              <TimelinePane colorId={3} icon={"book"}>
                 <h2>Data Science Internship at BNPP CIB Analytics Consulting - AI
-                  Lab <span>(2019-present, Paris FR)</span>
+                  Lab <span>(05/2019-11/2019, Paris FR)</span>
                 </h2>
                 <p>
                   I joined BNP Paribas as a Data science intern. My work involves researching new
@@ -41,7 +50,7 @@ export default function Experience() {
                   can be used in the industry.
                 </p>
               </TimelinePane>
-              <TimelinePane colorId={4} icon={"pencil"}>
+              <TimelinePane colorId={4} icon={"stack"}>
                 <h2>Software & Machine Learning Intern at xBrain <span>(08/2017-02/2018, CA US)</span></h2>
                 <p>
                   During my internship at xBrain, I had the opportunity to work with a very passionate team on a
@@ -53,7 +62,7 @@ export default function Experience() {
                   all dockerized.
                 </p>
               </TimelinePane>
-              <TimelinePane colorId={5} icon={"pencil"}>
+              <TimelinePane colorId={5} icon={"clipboard"}>
                 <h2>Software developer & Agile Prototyper at Paris Digital
                   Lab <span>(01/2017-07/2017, Paris FR)</span></h2>
                 <div>
