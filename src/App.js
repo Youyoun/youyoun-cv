@@ -48,7 +48,7 @@ function App() {
     "Experience": experienceRef,
     "Education": educationRef,
     "Skills": skillsRef,
-    "Contact": contactRef,
+    //"Contact": contactRef,
   };
 
   useEffect(() => {
@@ -104,9 +104,9 @@ function App() {
           <div ref={skillsRef}>
             <Skills/>
           </div>
-          <div ref={contactRef}>
-            <Contact/>
-          </div>
+          {/*<div ref={contactRef}>*/}
+          {/*  <Contact/>*/}
+          {/*</div>*/}
         </div>
       </div>
     </div>
