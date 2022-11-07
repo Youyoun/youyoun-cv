@@ -89,15 +89,21 @@ export default class Introduction extends Component {
           <Slide background="url(images/intro-1.jpg)">
             <h1 id={"slide1-text"}>Hello! <br/>I'm Younes</h1>
             <Button
-              id={"slide1-button"}
+              id="slide1-button"
               link="CV_younes_belkouchi.pdf"
               text="View CV" iconClass="folder-download"/>
           </Slide>
           <Slide background="url(images/youyounDTY.jpg)">
-            <h1 style={{color: "white"}}>I'm a tech enthousiast !</h1>
+            <h1 style={{color: "white"}}>Check out some of my projects !</h1>
             <Button
-              link="https://github.com/youyoun" style={{border: "1px solid #fff", color: "white", background: 0}}
+              id="slide1-button"
+              link="https://github.com/youyoun"
               text="View Projects" iconClass="briefcase"/>
+            <Button
+              id="slide1-button"
+              style={{marginLeft: '5px'}}
+              link="https://scholar.google.com/citations?user=06I0Q1sAAAAJ"
+              text="View Research" iconClass="briefcase"/>
           </Slide>
         </Carousel>
       </section>
