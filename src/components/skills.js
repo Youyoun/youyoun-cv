@@ -26,16 +26,18 @@ class Skills extends React.Component {
         <SectionHeader title={"My skills"} subTitle={"Skills"}/>
         <Row>
           <Col md={12}>
-            <p>These are some of my skills:</p>
+            <p>These are some of the skills that I find interesting to develop and work on
+              and that I try to hone through my work. The values displays are of course subjective and shouldn't
+            be considered absolute:</p>
           </Col>
           <SkillBar skillName={"Python"} colorId={1} percentProficiency={95}/>
           <SkillBar skillName={"Web development"} colorId={2} percentProficiency={80}/>
           <SkillBar skillName={"Docker"} colorId={3} percentProficiency={80}/>
-          <SkillBar skillName={"Linux"} colorId={4} percentProficiency={90}/>
+          <SkillBar skillName={"Linux"} colorId={4} percentProficiency={95}/>
           <SkillBar skillName={"Git"} colorId={6} percentProficiency={80}/>
-          <SkillBar skillName={"SGBD"} colorId={5} percentProficiency={80}/>
-          <SkillBar skillName={"Learning New Technologies"} colorId={5} percentProficiency={95}/>
-          <SkillBar skillName={"Adapt to existing Software"} colorId={9} percentProficiency={100}/>
+          <SkillBar skillName={"SGBD"} colorId={5} percentProficiency={85}/>
+          <SkillBar skillName={"Project Management"} colorId={1} percentProficiency={80}/>
+          <SkillBar skillName={"Learn and Adapt to New Technologies"} colorId={3} percentProficiency={95}/>
         </Row>
       </section>
     )
