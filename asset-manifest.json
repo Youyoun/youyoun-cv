@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/youyoun-cv/static/css/main.e822bfda.chunk.css",
-    "main.js": "/youyoun-cv/static/js/main.a661023c.chunk.js",
-    "main.js.map": "/youyoun-cv/static/js/main.a661023c.chunk.js.map",
-    "runtime~main.js": "/youyoun-cv/static/js/runtime~main.dbba5410.js",
-    "runtime~main.js.map": "/youyoun-cv/static/js/runtime~main.dbba5410.js.map",
-    "static/css/2.69121389.chunk.css": "/youyoun-cv/static/css/2.69121389.chunk.css",
-    "static/js/2.c0277a5e.chunk.js": "/youyoun-cv/static/js/2.c0277a5e.chunk.js",
-    "static/js/2.c0277a5e.chunk.js.map": "/youyoun-cv/static/js/2.c0277a5e.chunk.js.map",
+    "main.css": "/youyoun-cv/static/css/main.a1dd0b36.chunk.css",
+    "main.js": "/youyoun-cv/static/js/main.3cd926c7.chunk.js",
+    "main.js.map": "/youyoun-cv/static/js/main.3cd926c7.chunk.js.map",
+    "runtime~main.js": "/youyoun-cv/static/js/runtime~main.47469919.js",
+    "runtime~main.js.map": "/youyoun-cv/static/js/runtime~main.47469919.js.map",
+    "static/css/2.266e55a5.chunk.css": "/youyoun-cv/static/css/2.266e55a5.chunk.css",
+    "static/js/2.4b6fe45c.chunk.js": "/youyoun-cv/static/js/2.4b6fe45c.chunk.js",
+    "static/js/2.4b6fe45c.chunk.js.map": "/youyoun-cv/static/js/2.4b6fe45c.chunk.js.map",
     "index.html": "/youyoun-cv/index.html",
-    "precache-manifest.0afea8b67a87cf1007e5f8cce237ee3c.js": "/youyoun-cv/precache-manifest.0afea8b67a87cf1007e5f8cce237ee3c.js",
+    "precache-manifest.e9b0fe1205103cc0a4cdb5402193de55.js": "/youyoun-cv/precache-manifest.e9b0fe1205103cc0a4cdb5402193de55.js",
     "service-worker.js": "/youyoun-cv/service-worker.js",
-    "static/css/2.69121389.chunk.css.map": "/youyoun-cv/static/css/2.69121389.chunk.css.map",
-    "static/css/main.e822bfda.chunk.css.map": "/youyoun-cv/static/css/main.e822bfda.chunk.css.map",
+    "static/css/2.266e55a5.chunk.css.map": "/youyoun-cv/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.a1dd0b36.chunk.css.map": "/youyoun-cv/static/css/main.a1dd0b36.chunk.css.map",
     "static/media/linkedin.jpeg": "/youyoun-cv/static/media/linkedin.53621746.jpeg"
   }
 }
