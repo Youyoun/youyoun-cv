@@ -30,8 +30,16 @@ export default function Experience() {
         <Row>
           <Col md={12}>
             <div className="timeline-centered">
+              <TimelinePane colorId={7} icon={"book"}>
+                <h2>PhD Student at CentraleSupelec and Gustave Roussy <span>(10/2020-present, Paris FR)</span>
+                </h2>
+                <p>
+                  The goal of my thesis is to identify prognostic or predictive imaging biomarkers using machine learning
+                  to determine if a patient will respond or not to immunotherapy.
+                </p>
+              </TimelinePane>
               <TimelinePane colorId={2} icon={"images"}>
-                <h2>Data scientist at Institut Gustave Roussy <span>(03/2020-present, Paris FR)</span>
+                <h2>Data scientist at Institut Gustave Roussy <span>(03/2020-10/2020, Paris FR)</span>
                 </h2>
                 <p>
                   My current work involves identifying relapse in breast cancer using histopathology images. <br/>
