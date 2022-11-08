@@ -17,7 +17,7 @@ function CollapsableButton(props) {
     <div className="panel panel-default">
       <div className="panel-heading">
         <h4 className="panel-title" style={{margin: 0}}>
-          <button className={"collapse-button"} onClick={toggleCollapse} className={collapse ? "collapsed" : ""}>
+          <button className={`collapse-button ${collapse ? "collapsed" : ""}`} onClick={toggleCollapse}>
             {props.title}
           </button>
         </h4>
