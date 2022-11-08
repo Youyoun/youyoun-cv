@@ -62,36 +62,6 @@
     height: 100%;
 }
 
-
-.glyphicon {
-    position: absolute;
-    font: normal normal 16px/1 'Glyphicons Halflings';
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    margin-right: 4px;
-    left: 300px;
-    top: 0px;
-    z-index: 1001;
-    opacity: 0.5;
-}
-
-.glyphicon.active {
-    opacity: 1;
-}
-
-/* Add icons you will be using below */
-.glyphicon-fire:before {
-    content: '\e104';
-}
-
-.glyphicon-align-justify:before {
-    content: '\e137';
-}
-
-.glyphicon-eye-open:before {
-    content: '\e105';
-}
-
 #sidebar-menu {
     display: block;
     width: 100%;
@@ -99,7 +69,7 @@
     margin: 25% 0 0 0;
 }
 
-#sidebar-menu ul li {
+.sidebar-menu-button {
     margin: 0 0 10px 0;
     padding: 0;
     list-style: none;
@@ -109,7 +79,8 @@
     letter-spacing: 1px;
 }
 
-#sidebar-menu ul li button {
+
+.sidebar-menu-button button {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
     position: relative;
@@ -120,7 +91,7 @@
     transition: 0.3s;
 }
 
-#sidebar-menu ul li button:after {
+.sidebar-menu-button button:after {
     content: "";
     position: absolute;
     height: 1px;
@@ -141,12 +112,12 @@
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#sidebar-menu ul li button:hover {
+.sidebar-menu-button button:hover {
     text-decoration: none;
     color: black;
 }
 
-#sidebar-menu ul li button:hover:after {
+.sidebar-menu-button button:hover:after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
@@ -155,17 +126,38 @@
     transform: scaleX(1);
 }
 
-#sidebar-menu ul li.active button {
+.sidebar-menu-button.active button {
     color: #2c98f0;
 }
 
-#sidebar-menu ul li.active button:after {
+.sidebar-menu-button.active button:after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.glyphicon {
+    position: absolute;
+    font: normal normal 16px/1 'Glyphicons Halflings';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 4px;
+    left: 300px;
+    top: 0;
+    z-index: 1001;
+    opacity: 0.5;
+}
+
+.glyphicon.active {
+    opacity: 1;
+}
+
+/* Add icons you will be using below */
+.glyphicon-align-justify:before {
+    content: '\e137';
 }
 
 @media screen and (min-width: 768px) {
