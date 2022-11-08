@@ -28,8 +28,8 @@
 
 .button {
     background: 0;
-    color: black;
-    border: 1px solid black;
+    color: white;
+    border: 1px solid white;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -49,13 +49,12 @@
     font-weight: 400;
 }
 
-#slide1-text {
+.slide1-text {
     color: white;
 }
 
-#slide1-button {
-    color: white;
-    border: 1px solid white;
+#second-button {
+    margin-left: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,8 +70,7 @@
         color: white;
     }
 
-    #slide1-button {
-        border: 1px solid white;
-        color: white;
+    #second-button {
+        margin-left: 5px;
     }
 }

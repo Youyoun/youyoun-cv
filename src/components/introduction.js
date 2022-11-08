@@ -64,21 +64,21 @@ export default function Introduction() {
         <section id="introduction">
             <Carousel autoSwapDelay={7}>
                 <Slide background="images/intro-1.jpg">
-                    <h1 id={"slide1-text"}>Hello! <br/>I'm Younes</h1>
+                    <h1 className={"slide1-text"}>Hello! <br/>I'm Younes</h1>
                     <Button
                         id="slide1-button"
                         link="CV_younes_belkouchi.pdf"
                         text="View CV" iconClass="folder-download"/>
                 </Slide>
                 <Slide background="images/youyounDTY.jpg">
-                    <h1 style={{color: "white"}}>Check out some of my projects !</h1>
+                    <h1 className={"slide1-text"}>Check out some of my projects !</h1>
                     <Button
-                        id="slide1-button"
+                        className="slide1-button"
                         link="https://github.com/youyoun"
                         text="View Projects" iconClass="briefcase"/>
                     <Button
-                        id="slide1-button"
-                        style={{marginLeft: '5px'}}
+                        id="second-button"
+                        className="slide1-button"
                         link="https://scholar.google.com/citations?user=06I0Q1sAAAAJ"
                         text="View Research" iconClass="briefcase"/>
                 </Slide>
