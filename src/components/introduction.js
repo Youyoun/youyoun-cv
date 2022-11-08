@@ -6,7 +6,7 @@ import "./Introduction.css";
 
 function Slide({background, children}) {
     return (
-        <div className={`slide`} style={{backgroundImage: background}}>
+        <div className={`slide`} style={{backgroundImage: `url(${background})`}}>
             <Container className={"no-margin-left"}>
                 <Col xs={12} md={8}>
                     {children}
@@ -63,14 +63,14 @@ export default function Introduction() {
     return (
         <section id="introduction">
             <Carousel autoSwapDelay={7}>
-                <Slide background="url(images/intro-1.jpg)">
+                <Slide background="images/intro-1.jpg">
                     <h1 id={"slide1-text"}>Hello! <br/>I'm Younes</h1>
                     <Button
                         id="slide1-button"
                         link="CV_younes_belkouchi.pdf"
                         text="View CV" iconClass="folder-download"/>
                 </Slide>
-                <Slide background="url(images/youyounDTY.jpg)">
+                <Slide background="images/youyounDTY.jpg">
                     <h1 style={{color: "white"}}>Check out some of my projects !</h1>
                     <Button
                         id="slide1-button"
