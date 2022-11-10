@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import IcoMoon from "react-icomoon";
