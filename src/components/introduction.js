@@ -61,7 +61,7 @@ function Carousel(props) {
         }
         swapSlideOnIntervalPass()
     }, [timer, props.autoSwapDelay, props.children.length, nextSlide])
-    console.log(timer)
+
     return (
         <div className={`left-container`}>
             <div className={"carousel-control"}>
