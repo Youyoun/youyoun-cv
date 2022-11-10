@@ -11,27 +11,42 @@
 }
 
 .no-margin-left {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
-.slide-text,
-.slide-container {
+.left-container {
     height: 100%;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
-.slide-swap-button {
+.card {
+    display: inline-block;
+    background-color: rgba(120, 120, 120, 0.6);
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.carousel-control {
+    display: block;
     position: absolute;
-    background-color: #e0e0e0;
     bottom: 2%;
     right: 2%;
+}
+
+.slide-control-button {
+    background-color: #e0e0e0;
     width: 50px;
     height: 50px;
     border-radius: 25px;
     opacity: 80%;
+    margin-right: 5px;
+    border: 1px solid white;
 }
 
-.slide-swap-button:active {
+.slide-control-button:active, .slide-control-button.active {
     background-color: grey;
     opacity: 100%;
 }
@@ -45,11 +60,17 @@
     -webkit-transform: rotate(-45deg);
 }
 
+.pause-button {
+    border: solid black;
+    border-width: 0 3px 0 3px;
+    display: inline-block;
+    padding: 10px 3px 3px;
+}
+
 #introduction {
     width: 100%;
     height: 100vh;
 }
-
 
 .button {
     background: 0;
@@ -59,8 +80,9 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 10px 15px;
-    width: 80vw;
     font-weight: bold;
+    width: 100%;
+    margin: 2px;
 }
 
 .button:hover, .button:active, .button:focus {
@@ -69,12 +91,8 @@
     border: 1px solid #f2f3f7;
 }
 
-.slide1-text {
+.slide-text {
     color: white;
-}
-
-#second-button {
-    margin-left: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -83,27 +101,19 @@
     }
 
     .button {
-        width: fit-content;
+        width: 170px;
     }
 
     .button:active {
-        width: fit-content;
+        width: 170px;
     }
 
     .button:focus {
-        width: fit-content;
+        width: 170px;
     }
 
-    #slide1-text {
-        color: white;
-    }
-
-    #second-button {
-        margin-left: 5px;
-    }
-
-
-    .slide-swap-button {
+    .carousel-control {
         bottom: 48%;
+        right: 2%;
     }
 }
