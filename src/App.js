@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState, useRef, useEffect, useMemo} from 'react';
 
 import "./App.css"
 
@@ -30,13 +30,13 @@ function App() {
     const educationRef = useRef(null);
     const skillsRef = useRef(null);
 
-    const sections = [
+    const sections = useMemo(() => [
         {section: "Introduction", ref: introductionRef},
         {section: "About", ref: aboutRef},
         {section: "Experience", ref: experienceRef},
         {section: "Education", ref: educationRef},
         {section: "Skills", ref: skillsRef},
-    ];
+    ], []);
 
     const [visibleSection, setVisibleSection] = useState(sections[0].section);
 
