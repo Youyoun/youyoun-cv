@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import IcoMoon from "react-icomoon";
@@ -35,28 +35,39 @@ function Carousel(props) {
     const [currentSlide, setCurrentSlide] = useState(0)
     const [timer, setTimer] = useState(0)
 
+    const nextSlide = useCallback(() => {
+        setCurrentSlide(currentSlide => (currentSlide + 1) % props.children.length)
+    }, [props.children.length])
 
     useEffect(() => {
         const start = Date.now()
         const startTimer = () => {
-            setInterval(() => setTimer(Date.now() - start), delayTimeInMiliseconds)
+            return setInterval(() => setTimer(Date.now() - start), delayTimeInMiliseconds)
         }
-        startTimer()
-    }, [])
+        const timerHandler = startTimer()
+        return () => {
+            clearInterval(timerHandler)
+        }
+    }, [currentSlide])
 
 
     useEffect(() => {
         const swapSlideOnIntervalPass = () => {
             if (Math.floor(timer / delayTimeInMiliseconds) % props.autoSwapDelay === props.autoSwapDelay - 1) {
-                setCurrentSlide(currentSlide => (currentSlide + 1) % props.children.length)
+                nextSlide()
             }
         }
         swapSlideOnIntervalPass()
-    }, [timer, props.autoSwapDelay, props.children.length])
+    }, [timer, props.autoSwapDelay, props.children.length, nextSlide])
 
     return (
         <div className={`slide-container`}>
+            <button className={'slide-swap-button'} onClick={() => nextSlide()}>
+                <i className={'arrow-right'}/>
+            </button>
+            <span>
             {props.children[currentSlide]}
+            </span>
         </div>
     )
 }
