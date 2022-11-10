@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.css": "/youyoun-cv/static/css/main.7f8b8a23.chunk.css",
-    "main.js": "/youyoun-cv/static/js/main.83a22a2b.chunk.js",
-    "main.js.map": "/youyoun-cv/static/js/main.83a22a2b.chunk.js.map",
-    "runtime~main.js": "/youyoun-cv/static/js/runtime~main.ace301a0.js",
-    "runtime~main.js.map": "/youyoun-cv/static/js/runtime~main.ace301a0.js.map",
-    "static/css/2.80f479d8.chunk.css": "/youyoun-cv/static/css/2.80f479d8.chunk.css",
-    "static/js/2.a49a40a1.chunk.js": "/youyoun-cv/static/js/2.a49a40a1.chunk.js",
-    "static/js/2.a49a40a1.chunk.js.map": "/youyoun-cv/static/js/2.a49a40a1.chunk.js.map",
+    "main.css": "/youyoun-cv/static/css/main.570be74d.css",
+    "main.js": "/youyoun-cv/static/js/main.fd5bd626.js",
+    "static/media/intro-1.jpg": "/youyoun-cv/static/media/intro-1.6bbe6d3019c91d2b9a34.jpg",
+    "static/media/youyounDTY.jpg": "/youyoun-cv/static/media/youyounDTY.8058e75baa47e9e15121.jpg",
+    "static/media/linkedin.jpeg": "/youyoun-cv/static/media/linkedin.80082f70d1342ee68310.jpeg",
     "index.html": "/youyoun-cv/index.html",
-    "precache-manifest.23b8b75c8944f31df6683dd58d0b3915.js": "/youyoun-cv/precache-manifest.23b8b75c8944f31df6683dd58d0b3915.js",
-    "service-worker.js": "/youyoun-cv/service-worker.js",
-    "static/css/2.80f479d8.chunk.css.map": "/youyoun-cv/static/css/2.80f479d8.chunk.css.map",
-    "static/css/main.7f8b8a23.chunk.css.map": "/youyoun-cv/static/css/main.7f8b8a23.chunk.css.map",
-    "static/media/intro-1.jpg": "/youyoun-cv/static/media/intro-1.e0335975.jpg",
-    "static/media/linkedin.jpeg": "/youyoun-cv/static/media/linkedin.53621746.jpeg",
-    "static/media/youyounDTY.jpg": "/youyoun-cv/static/media/youyounDTY.f2cfc4ee.jpg"
-  }
+    "main.570be74d.css.map": "/youyoun-cv/static/css/main.570be74d.css.map",
+    "main.fd5bd626.js.map": "/youyoun-cv/static/js/main.fd5bd626.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.570be74d.css",
+    "static/js/main.fd5bd626.js"
+  ]
 }
