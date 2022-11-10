@@ -27,9 +27,8 @@ function Skills() {
             <Row>
                 <Col md={12}>
                     <p>These are some of the skills that I find interesting to develop and work on
-                        and that I try to hone through my work. The values displays are of course subjective and
-                        shouldn't
-                        be considered absolute:</p>
+                        and that I try to hone through my work. The values displays are of course just for fun and
+                        shouldn't be considered absolute:</p>
                 </Col>
                 <SkillBar skillName={"Python"} colorId={1} percentProficiency={95}/>
                 <SkillBar skillName={"Web development"} colorId={2} percentProficiency={80}/>
