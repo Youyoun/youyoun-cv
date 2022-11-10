@@ -9,7 +9,7 @@ import Education from "./components/education";
 import Experience from "./components/experience";
 import Skills from "./components/skills";
 
-import photo from './linkedin.jpeg'
+import photo from './assets/linkedin.jpeg'
 
 function getDimensions(ele) {
     const {height} = ele.getBoundingClientRect();

@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import IcoMoon from "react-icomoon";
 import "./Introduction.css";
+import SlideImg1 from "../assets/intro-1.jpg"
+import SlideImg2 from "../assets/youyounDTY.jpg"
 
 function Slide({background, children}) {
     return (
@@ -63,14 +65,14 @@ export default function Introduction() {
     return (
         <section id="introduction">
             <Carousel autoSwapDelay={7}>
-                <Slide background="images/intro-1.jpg">
+                <Slide background={SlideImg1}>
                     <h1 className={"slide1-text"}>Hello! <br/>I'm Younes</h1>
                     <Button
                         id="slide1-button"
                         link="CV_younes_belkouchi.pdf"
                         text="View CV" iconClass="folder-download"/>
                 </Slide>
-                <Slide background="images/youyounDTY.jpg">
+                <Slide background={SlideImg2}>
                     <h1 className={"slide1-text"}>Check out some of my projects !</h1>
                     <Button
                         className="slide1-button"
