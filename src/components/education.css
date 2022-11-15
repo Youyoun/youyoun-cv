@@ -70,6 +70,19 @@
     border: 1px solid #e6e6e6 !important;
 }
 
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.right-aligned {
+    text-align: right;
+}
+
 @media screen and (min-width: 768px) {
     .education {
         padding-top: 2em;
