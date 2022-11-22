@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import IcoMoon from "react-icomoon";
 
 import "./about.css"
-import SectionHeader from "./SectionHeader/sectionHeader";
+import SectionHeader from "../SectionHeader/sectionHeader";
 
 function AboutDescription() {
     return (

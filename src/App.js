@@ -2,12 +2,12 @@ import React, {useState, useRef, useEffect, useMemo} from 'react';
 
 import "./App.css"
 
-import Sidebar from "./components/sidebar";
-import Introduction from "./components/introduction";
-import About from "./components/about";
-import Education from "./components/education";
-import Experience from "./components/experience";
-import Skills from "./components/skills";
+import Sidebar from "./components/Sidebar/sidebar";
+import Introduction from "./components/Introduction/introduction";
+import About from "./components/About/about";
+import Education from "./components/Education/education";
+import Experience from "./components/Experience/experience";
+import Skills from "./components/Skills/skills";
 
 import photo from './assets/linkedin.jpeg'
 

@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import IcoMoon from "react-icomoon";
 import "./Introduction.css";
-import SlideImg1 from "../assets/intro-1.jpg"
-import SlideImg2 from "../assets/youyounDTY.jpg"
+import SlideImg1 from "../../assets/intro-1.jpg"
+import SlideImg2 from "../../assets/youyounDTY.jpg"
 
 function Slide({background, children}) {
     return (
