@@ -10,7 +10,7 @@ const heading = {
   color: "#999999",
   fontWeight: "500",
   letterSpacing: "5px",
-};
+} as const;
 
 const headingMeta = {
   fontSize: "18px",
@@ -20,10 +20,14 @@ const headingMeta = {
   letterSpacing: "5px",
   lineHeight: "1.8",
   position: "relative",
-};
+} as const;
 
+type Props = {
+  title: string,
+  subTitle: string
+}
 
-export default function SectionHeader({title, subTitle}) {
+export default function SectionHeader({title, subTitle}: Props) {
   return (
     <Row className="row">
       <Col md={6}>
