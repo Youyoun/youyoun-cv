@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://youyoun.github.io/youyoun-cv",
   "dependencies": {
+    "@types/eslint": "^8.4.10",
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",

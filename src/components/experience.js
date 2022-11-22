@@ -1,7 +1,7 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import SectionHeader from "./sectionHeader";
+import SectionHeader from "./SectionHeader/sectionHeader";
 import IcoMoon from "react-icomoon";
 import "./experience.css";
 

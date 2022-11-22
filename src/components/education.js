@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Collapse from "react-bootstrap/Collapse";
-import SectionHeader from "./sectionHeader";
+import SectionHeader from "./SectionHeader/sectionHeader";
 import "./education.css"
 
 
