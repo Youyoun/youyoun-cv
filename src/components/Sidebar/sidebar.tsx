@@ -1,16 +1,30 @@
-import React, {useState} from 'react';
+import React, {RefObject, useState} from 'react';
 
 import Button from "react-bootstrap/Button";
 import "./sidebar.css"
 
-const scrollTo = ele => {
+type navButtonProps = {
+    selectedSection: string
+    section: string
+    onClick: CallableFunction
+}
+
+type SidebarProps = {
+    name: string
+    photo: string
+    title: string
+    sections: { ref: RefObject<any>, section: string }[]
+    visibleSection: string
+}
+
+function scrollTo(ele: Element) {
     ele.scrollIntoView({
         behavior: "smooth",
         block: "start"
     });
-};
+}
 
-function NavButton(props) {
+function NavButton(props: navButtonProps) {
     // Need to fix the problem of using li and button, feel not reactjsy
     return (
         <li className={`sidebar-menu-button ${props.selectedSection === props.section ? "active" : ""}`}>
@@ -21,7 +35,7 @@ function NavButton(props) {
     )
 }
 
-function Sidebar(props) {
+function Sidebar(props: SidebarProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
