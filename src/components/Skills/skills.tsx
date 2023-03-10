@@ -4,7 +4,13 @@ import Col from 'react-bootstrap/Col';
 import SectionHeader from "../SectionHeader/sectionHeader";
 import "./skills.css"
 
-function SkillBar(props) {
+type SkillBarProps = {
+    skillName: string
+    colorId: number
+    percentProficiency: number
+}
+
+function SkillBar(props: SkillBarProps) {
     return (
         <Col md={6}>
             <div className="progress-wrap">

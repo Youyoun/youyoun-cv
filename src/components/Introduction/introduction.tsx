@@ -3,10 +3,10 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import IcoMoon from "react-icomoon";
 import "./Introduction.css";
-import SlideImg1 from "../../assets/intro-1.jpg"
-import SlideImg2 from "../../assets/youyounDTY.jpg"
+import SlideImg1 from "../../assets/intro-1.jpg";
+import SlideImg2 from "../../assets/youyounDTY.jpg";
 
-function Slide({background, children}) {
+function Slide({background, children}: { background: string, children: React.ReactElement }) {
     return (
         <div className={`slide`} style={{backgroundImage: `url(${background})`}}>
             <Container className={"no-margin-left"}>
@@ -18,17 +18,16 @@ function Slide({background, children}) {
     )
 }
 
-function Button(props) {
+function Button(props: { iconClass: string, text: string, link: string }) {
     let icon = props.iconClass ? <IcoMoon icon={props.iconClass}/> : null;
     return (
-        <a className="btn btn-primary button" href={props.link} id={props.id}
-           target="_blank" rel="noopener noreferrer" style={props.style}>
+        <a className="btn btn-primary button" href={props.link} target="_blank" rel="noopener noreferrer">
             {props.text} {icon}
         </a>
     )
 }
 
-function Carousel(props) {
+function Carousel(props: { children: React.ReactElement[], autoSwapDelay: number }) {
     const delayTimeInMiliseconds = 1000
 
     const [currentSlide, setCurrentSlide] = useState(0)

@@ -6,7 +6,7 @@ import SectionHeader from "../SectionHeader/sectionHeader";
 import "./education.css"
 
 
-function CollapsableButton(props) {
+function CollapsableButton(props: { title: string, children: React.ReactElement }) {
     const [collapse, setCollapse] = useState(false);
 
     return (
@@ -45,7 +45,7 @@ export default function Education() {
                 <Col md={12}>
                     <div className="fancy-collapse-panel">
                         <div className="panel-group" id="accordion">
-                            <CollapsableButton title="Ecole Centrale Paris" buttonId="1">
+                            <CollapsableButton title="Ecole Centrale Paris">
                                 <Col md={12}>
                                     <p>
                                         Ecole Centrale Paris is a prestigious Engineering School, member of France’s
@@ -69,7 +69,7 @@ export default function Education() {
                                     </Row>
                                 </Col>
                             </CollapsableButton>
-                            <CollapsableButton title="Al khawarizmi Foundation Courses" buttonId="2">
+                            <CollapsableButton title="Al khawarizmi Foundation Courses">
                                 <p>
                                     Foundation courses is a 2-year school program following high school where students
                                     study intensively

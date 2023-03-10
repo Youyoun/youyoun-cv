@@ -1,10 +1,12 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
-import IcoMoon from "react-icomoon";
+import IcoMoon from 'react-icomoon';
 
 import "./about.css"
 import SectionHeader from "../SectionHeader/sectionHeader";
+
+type PanelProps = { colorId: number, icon: string, title: string, children: React.ReactElement }
 
 function AboutDescription() {
     return (
@@ -61,7 +63,7 @@ function AboutExpertise() {
     )
 }
 
-function Pannel(props) {
+function Pannel(props: PanelProps) {
     return (
         <Col md={4} style={{textAlign: "center"}}>
             <div className={'services-box'}>
